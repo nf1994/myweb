@@ -8,6 +8,10 @@
     "dependencies": {
         "express": "*",
         "ejs": "*",
-        "body-parser": "*"
+        "mongoose": "*",
+        "body-parser":"*",
+        "crypto": "*",
+        "log4js": "*",
+        "express-session": "*"
     }
 }

@@ -1,13 +1,13 @@
 /**
  * Created by nick on 16-6-4.
  */
-var siteTitle = '优品开源', //站点名称
+var siteTitle = '宁峰', //站点名称
     pageTitle = { //各页面名称
         '/': '首页',
         '/index': '首页',
         '/register': '注册'
     },
-    basePath = 'http://127.0.0.1:3000';  //设置页面根路径
+    basePath = 'http://127.0.0.1';  //设置页面根路径
     module.exports = { //对外开放配置
     setting: function( req, path, file ){
         return {

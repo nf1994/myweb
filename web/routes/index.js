@@ -11,6 +11,6 @@ exports.all = function( app ){
         issue.register( req, res ) //将register请求转向issue内的函数
     });
     app.post('/register', function( req, res ){
-        issue.registerUser( req, res );
+        issue.registerUser( req, res )
     });
 }

@@ -2,6 +2,7 @@
  * Created by nick on 16-6-4.
  */
 var site = require( '../config/site' ); //引入site Config
+var user = require( '../controls/user' );
 
 function index( req, res ){
     res.render( 'issue/index.ejs', site.setting( req, '/issue/index', '/index' ) );
@@ -12,6 +13,7 @@ function register( req, res ){
 }
 
 function registerUser( req, res ){
+    // user.addUser( req, res );
     res.send( { code: 0, msg: 'register info access success',data: req.body } );
     //这里原本是要处理数据库存储操作，这里先走通ajax通信，验证能成功获取数据
 }
