@@ -14,6 +14,7 @@ function register( req, res ){
 
 function registerUser( req, res ){
     // user.addUser( req, res );
+    console.log("test");
     res.send( { code: 0, msg: 'register info access success',data: req.body } );
     //这里原本是要处理数据库存储操作，这里先走通ajax通信，验证能成功获取数据
 }
