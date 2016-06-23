@@ -14,10 +14,13 @@ function addUser( req, res ){ //增加用户
     })
 }
 
-function findUser( req, res ){ //查找用户
+function findUser( req, res ){
     var data = req.body;
-    db.addUser( data, function( err, doc ){
+    db.findUser( data, function( err, doc ){
         if( !err ){
+            if( doc ){ //如果登录有查找结果
+                req.session.status = true;        //则session里记录状态为true
+            }
             res.send(  { code: 0, msg: 'find User Success', data: doc }  );
         }
     })

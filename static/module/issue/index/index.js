@@ -1,3 +1,10 @@
-/**
- * Created by nick on 16-6-4.
- */
+
+require.config({
+	baseUrl: basePath,
+	paths: {
+		all: 'public/js/all',
+	}
+})
+define(['all'], function(){
+   
+});
